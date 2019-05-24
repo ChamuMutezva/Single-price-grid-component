@@ -1,4 +1,5 @@
 # Frontend Mentor - Single Price Grid Component
+https://chamumutezva.github.io/Single-price-grid-component/
 
 ![Design preview for the Single Price Grid Component coding challenge](./design/desktop-preview.jpg)
 
