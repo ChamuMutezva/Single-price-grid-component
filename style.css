@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.page_wrapper {
+    margin: 5%;
+}
+
+header {
+    background-color: white;
+}
+
+h1 {
+    font-size: 16px;
+    padding-top: 5%;
+    text-align: start;
+    margin-left: 5%;
+    color: hsl(179, 62%, 43%);
+}
+
+h2 {
+    font-size: large;
+    text-align: start;
+    margin-left: 5%;
+    padding-top: 5%;
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 5%;
+}
+
+p {
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: start;
+    font-size: small;
+    line-height: 1.5;
+   
+}
+
+main {
+   color: white;
+}
+
+section.signUp {
+    background-color: hsl(179, 62%, 43%);
+    padding-bottom: 10%;
+}
+
+section.aboutUs {
+     background-color: hsl(179, 62%, 43%);
+    opacity: 0.7;
+}
+
+h3 {
+    padding-top: 5%;
+    text-align: start;
+    margin-left: 5%;
+    font-size: small;
+}
+
+span.signUp {
+    width: 80%;
+    background-color: hsl(71, 73%, 54%);
+    height: 8vh;
+    border-radius: 30px;
+    display: block;
+    margin: 5% auto 0;
+    /* padding-bottom: 28%; */
+}
+
+span.signUp a {    
+    line-height: 2;
+    text-decoration: none;
+    color: white;
+}
