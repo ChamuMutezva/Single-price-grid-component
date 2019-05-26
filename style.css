@@ -160,6 +160,9 @@ footer a{
     h3 {        
         margin-left: 5%;        
     }
+    div.signUp a {
+        line-height: 3;       
+    }
 }
 
 @media only screen and (min-width: 490px) and (max-width: 650px){
