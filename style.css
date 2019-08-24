@@ -58,17 +58,18 @@ main {
 section.signUp {
     background-color: hsl(179, 62%, 43%);
     padding-bottom: 10%;
-   border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-section.signUp p, section.signUp h3{
-margin-left: 10%;
+section.signUp p,
+section.signUp h3 {
+    margin-left: 10%;
 }
 
 section.aboutUs {
     background-color: hsl(179, 62%, 43%);
     opacity: 0.7;
-    padding-bottom: 5%;   
+    padding-bottom: 5%;
     border-bottom-right-radius: 10px;
 }
 
@@ -125,25 +126,33 @@ span.currencyAmt {
     opacity: 0.7;
 }
 
-footer a{
+footer a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 650px){
-    main {        
+div.signUp:hover {
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 650px) {
+    main {
         grid-template-columns: 1fr;
     }
+
     .page_wrapper {
         margin: 5%;
     }
-    h2 {       
-        padding-top: 5%;       
+
+    h2 {
+        padding-top: 5%;
         padding-bottom: 5%;
     }
+
     section.signUp p,
     section.signUp h3 {
         margin-left: 5%;
     }
+
     p {
         margin: 5% 5% 0 5%;
         text-align: start;
@@ -151,22 +160,26 @@ footer a{
         line-height: 1.5;
         padding-bottom: 5%;
     }
-    section.aboutUs {         
-        border-bottom-left-radius: 10px;     
+
+    section.aboutUs {
+        border-bottom-left-radius: 10px;
     }
-    section.signUp {        
+
+    section.signUp {
         border-bottom-left-radius: 0;
     }
-    h3 {        
-        margin-left: 5%;        
+
+    h3 {
+        margin-left: 5%;
     }
+
     div.signUp a {
-        line-height: 3;       
+        line-height: 3;
     }
 }
 
-@media only screen and (min-width: 490px) and (max-width: 650px){
+@media only screen and (min-width: 490px) and (max-width: 650px) {
     div.signUp {
-        width: 50%;        
+        width: 50%;
     }
 }
