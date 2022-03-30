@@ -1,17 +1,110 @@
-* {
-    margin: 0;
-    padding: 0;
+/* ----------------------------------- */
+/*          RESET                      */
+/* ------------------------------------*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-body {
-    text-align: center;
-    font-family: "Karla", sans-serif;
-    background-color: hsl(204, 43%, 93%);
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
 }
 
-.page_wrapper {
-    margin: 10% 20%;
+/* Remove list styles on ul,
+ol elements with a list role,
+which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+fieldset {
+    border: none;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {    
+    font-family: "Karla", sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 39.6875rem;
+    padding-block: 4.5rem;
+    padding-inline: 2rem;
 }
 
 header {
@@ -20,86 +113,89 @@ header {
     border-top-right-radius: 10px;
 }
 
-main {
+.main {
     color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
-h1 {
-    font-size: 16px;
-    padding-top: 5%;
+.main-title {
+    font-size: 1.25rem;
+
     text-align: start;
-    margin-left: 5%;
+
     color: hsl(179, 62%, 43%);
 }
 
-h2 {
-    font-size: medium;
-    text-align: start;
-    margin-left: 5%;
-    padding-top: 2%;
+.sub-title {
+    font-size: 0.9375rem;
+    margin-block-start: 1rem;
     color: hsl(71, 73%, 54%);
-    padding-bottom: 2%;
 }
 
-p {
-    margin: 0 5%;
-    text-align: start;
-    font-size: small;
-    line-height: 1.5;
-    padding-bottom: 5%;
+.primary-content {
+    font-size: 0.875rem;
+    line-height: 1.8;
+    margin-block-start: 1rem;
+    color: #9AA7BE;
+}
+
+.header-content {
+    padding-block: 1.75rem;
+    padding-inline: 1.5rem;
+}
+
+.sign-up-content {
+    padding-block: 1.5rem;
+    padding-inline: 1.5rem;
+}
+
+.sign-up-content {
+    padding-inline: 1.5rem;
+    padding-block: 1.5rem;
+}
+
+.sign-up-btn {
+    display: block;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.sign-up-title {
+    font-size: 1.125rem;
 }
 
 main {
     color: white;
 }
 
-section.signUp {
+section.sign-up-container {
     background-color: hsl(179, 62%, 43%);
     padding-bottom: 10%;
     border-bottom-left-radius: 10px;
 }
 
-section.signUp p,
-section.signUp h3 {
-    margin-left: 10%;
-}
-
-section.aboutUs {
+section.about-us {
     background-color: hsl(179, 62%, 43%);
     opacity: 0.7;
-    padding-bottom: 5%;
-    border-bottom-right-radius: 10px;
 }
 
-h3 {
-    padding-top: 5%;
-    text-align: start;
-    margin-left: 5%;
-    font-size: small;
-    letter-spacing: 1px;
-}
 
-div.signUp {
-    width: 80%;
+.sign-up-container {
     background-color: hsl(71, 73%, 54%);
-    height: 8vh;
-    border-radius: 5px;
-    display: block;
-    margin: 5% auto 0;
-    /* padding-bottom: 28%; */
 }
 
-div.signUp a {
+.about-us-container {
+    padding-inline: 1.5rem;
+    padding-block: 1.5rem;
+}
+
+.sign-up-container a {
     line-height: 4;
     text-decoration: none;
     color: white;
     font-size: small;
-}
-
-.aboutUs h3 {
-    margin-bottom: 5%;
 }
 
 .hero {
@@ -117,12 +213,11 @@ div.signUp a {
     margin-left: 5%;
 }
 
-span.currencyAmt {
-    font-size: x-large;
-    /* font-weight: 900; */
+.currency-amt {
+    font-size: 2rem;
 }
 
-.dimFont {
+.dim-font {
     opacity: 0.7;
 }
 
@@ -130,56 +225,22 @@ footer a {
     text-decoration: none;
 }
 
-div.signUp:hover {
+.sign-up-container:hover {
     opacity: 0.9;
 }
 
-@media only screen and (max-width: 650px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-
-    .page_wrapper {
-        margin: 5%;
-    }
-
-    h2 {
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-
-    section.signUp p,
-    section.signUp h3 {
-        margin-left: 5%;
-    }
-
-    p {
-        margin: 5% 5% 0 5%;
-        text-align: start;
-        font-size: small;
-        line-height: 1.5;
-        padding-bottom: 5%;
-    }
-
-    section.aboutUs {
-        border-bottom-left-radius: 10px;
-    }
-
-    section.signUp {
-        border-bottom-left-radius: 0;
-    }
-
-    h3 {
-        margin-left: 5%;
-    }
-
-    div.signUp a {
-        line-height: 3;
-    }
+.sign-up-container {
+    border-bottom-left-radius: 0;
 }
 
-@media only screen and (min-width: 490px) and (max-width: 650px) {
-    div.signUp {
-        width: 50%;
+.sign-up-container a {
+    line-height: 3;
+}
+
+
+@media only screen and (min-width: 650px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
