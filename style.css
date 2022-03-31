@@ -251,6 +251,10 @@ footer a {
 
 
 @media only screen and (min-width: 650px) {
+    .container {
+        padding-block: 10.1875rem;
+    }
+
     .main {
         display: grid;
         grid-template-columns: 1fr 1fr;
